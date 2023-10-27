@@ -3,4 +3,4 @@
 [Panel]
 crypto=script-name=crypto
 [Script]
-crypto=type=generic,script-path=https://raw.githubusercontent.com/monkeybape/rules/main/crypto.js
+crypto=type=generic,script-path=https://raw.githubusercontent.com/monkeybape/rules/main/crypto_prices.js
