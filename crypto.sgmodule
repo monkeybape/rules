@@ -1,4 +1,4 @@
-﻿#!name=汇率-加密货币
+﻿#!name=加密货币
 #!desc=加密货币面板
 [Panel]
 crypto=script-name=crypto
