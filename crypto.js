@@ -7,7 +7,6 @@ let symbols = [
   { symbol: 'LTC', name: '莱特币' },
   { symbol: 'SOL', name: '索拉纳' },
   { symbol: 'ARB', name: 'ARB币' },
-  { symbol: 'PEPE', name: 'PEPE币' },
   { symbol: 'TRX', name: '波场币' }
 ];
 
