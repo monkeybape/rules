@@ -30,9 +30,8 @@ function main(config) {
   // 覆盖 dns 配置
   config["dns"] = {
     "enable": true,
+    "listen": "0.0.0.0:1053",
     "ipv6": false,
-    "listen": "0.0.0.0:5352",
-    "use-hosts": true,
     "enhanced-mode": "fake-ip",
     "fake-ip-range": "198.18.0.1/16",
     "fake-ip-filter": [
@@ -177,7 +176,7 @@ function main(config) {
       "type": "url-test",
       "include-all": true,
       "filter": "^((?!套餐|到期|余额|剩余|流量|官网|🇭🇰|港|HK|Hong|🇹🇼|台|TW|Tai|🇯🇵|日|JP|Japan|🇸🇬|坡|狮城|SG|Singapore|🇰🇷|韩|KR|KOR|Korea|🇺🇸|美|US|States|American|🇬🇧|英国|英|英格兰|UK|United Kingdom).)*$",
-      "icon": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Turkey.png"
+      "icon": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/United_Nations.png"
     },
     {
       ...groupBaseOption,
