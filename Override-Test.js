@@ -127,7 +127,9 @@ function main(config) {
       "name": "🇭🇰 香港节点",
       "type": "url-test",
       "include-all": true,
-      "filter": "港|🇭🇰|香港|HK|Hong"
+      "filter": "港|🇭🇰|香港|HK|Hong",
+      "icon": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Hong_Kong.png"
+
     },
     {
       ...groupBaseOption,
