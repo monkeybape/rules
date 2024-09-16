@@ -52,10 +52,10 @@ function main(config) {
       "*.*.stun.playstation.net", "xbox.*.*.microsoft.com", "*.*.xboxlive.com", "proxy.golang.org",
       "*.sgcc.com.cn", "*.alicdn.com", "*.aliyuncs.com", "*.ntp.org.cn", "*.pool.ntp.org", "ntp.*.com"
     ],
-    "default-nameserver": ["system"],
-    "nameserver": ["223.5.5.5", "119.29.29.29", "180.184.1.1"],
+    "default-nameserver": ["223.5.5.5", "tls://1.12.12.12:853", "tls://223.5.5.5:853"],
+    "nameserver": ["https://doh.pub/dns-query", "https://dns.alidns.com/dns-query"],
     "nameserver-policy": {
-      "geosite:cn": "system",
+      "geosite:cn": ["223.5.5.5", "tls://1.12.12.12:853", "tls://223.5.5.5:853"],
       "geosite:gfw,geolocation-!cn": ["quic://223.5.5.5", "quic://223.6.6.6", "https://1.12.12.12/dns-query", "https://120.53.53.53/dns-query"]
     }
   };
@@ -683,7 +683,7 @@ function main(config) {
 //    "SRC-IP-CIDR,198.18.0.0/16,REJECT",
 //    "AND,(AND,(DST-PORT,443),(NETWORK,UDP)),(GEOSITE,Geolocation-!cn),REJECT",
     "RULE-SET,Private_domain,➿ 全球直连",
-    "RULE-SET,Private_ipcidr,➿ 全球直连",
+    "RULE-SET,Private_ipcidr,➿ 全球直连,no-resolve",
     "RULE-SET,NTP,➿ 全球直连",
     "RULE-SET,Ad_blocking,⛔ 全球拦截",
     "RULE-SET,Google_CN,➿ 全球直连",
