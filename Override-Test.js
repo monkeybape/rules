@@ -680,8 +680,8 @@ function main(config) {
   
   // 覆盖规则
   config["rules"] = [
-    "SRC-IP-CIDR,198.18.0.0/16,REJECT",
-    "AND,(AND,(DST-PORT,443),(NETWORK,UDP)),(GEOSITE,Geolocation-!cn),REJECT",
+//    "SRC-IP-CIDR,198.18.0.0/16,REJECT",
+//    "AND,(AND,(DST-PORT,443),(NETWORK,UDP)),(GEOSITE,Geolocation-!cn),REJECT",
     "RULE-SET,Private_domain,➿ 全球直连",
     "RULE-SET,Private_ipcidr,➿ 全球直连",
     "RULE-SET,NTP,➿ 全球直连",
