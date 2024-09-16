@@ -18,13 +18,14 @@ function main(config) {
   config["mixed-port"] = "7890";
   config["tcp-concurrent"] = true;
   config["allow-lan"] = true;
-  config["mode"] = "Rule";
-  config["log-level"] = "info";
   config["ipv6"] = false;
+  config["log-level"] = "info";
+  config["unified-delay"] = "true";
+  config["find-process-mode"] = "strict";
+  config["global-client-fingerprint"] = "chrome";
   config["external-controller"] = "127.0.0.1:9090";
   config["external-ui"] = "ui";
-  config["profile"] = { "store-fake-ip": true };
-
+  config["external-ui-url"] = "https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-pages.zip";
 
   // 覆盖 dns 配置
   config["dns"] = {
@@ -52,60 +53,48 @@ function main(config) {
       "*.*.stun.playstation.net", "xbox.*.*.microsoft.com", "*.*.xboxlive.com", "proxy.golang.org",
       "*.sgcc.com.cn", "*.alicdn.com", "*.aliyuncs.com", "*.ntp.org.cn", "*.pool.ntp.org", "ntp.*.com"
     ],
-    "default-nameserver": ["114.114.114.114", "223.5.5.5", "tls://1.12.12.12:853", "tls://223.5.5.5:853"],
-    "nameserver": ["https://doh.pub/dns-query", "https://dns.alidns.com/dns-query"],
-    "fallback": ["1.0.0.1", "8.8.4.4"],
-    "fallback-filter": {
-      "geoip": true,
-      "geoip-code": "CN",
-      "geosite": ["gfw"]
+    "default-nameserver": ["system"],
+    "nameserver": ["223.5.5.5", "119.29.29.29", "180.184.1.1"],
+    "nameserver-policy": {
+      "geosite:cn": "system",
+      "geosite:gfw,geolocation-!cn": ["quic://223.5.5.5", "quic://223.6.6.6", "https://1.12.12.12/dns-query", "https://120.53.53.53/dns-query"]
     }
   };
 
   // 覆盖 tun 配置
   config["tun"] = {
     "enable": true,
-    "stack": "system",
-    "device": "utun",
-    "auto-route": false,
-    "auto-detect-interface": false
+    "stack": "mixed",
+    "dns-hijack": ["any:53"]
   };
 
   // 覆盖 sniffer 配置
   config["sniffer"] = {
     "enable": true,
-    "skip-domain": ["Mijia Cloud"],
+    "parse-pure-ip": true,
     "sniff": {
-      "tls": {
-        "ports": [443, 8443]
+      "TLS": {
+        "ports": ["443", "8443"]
       },
-      "http": {
-        "ports": [80, "8080-8880"],
+      "HTTP": {
+        "ports": ["80", "8080-8880"],
         "override-destination": true
+      },
+      "QUIC": {
+        "ports": ["443", "8443"]
       }
     }
   };
 
-  // Meta内核专属配置
-  config["find-process-mode"] = "off";
-  config["unified-delay"] = true;
-  config["tcp-concurrent"] = true;
+  // 覆盖 geodata 配置
   config["geodata-mode"] = true;
-  config["geodata-loader"] = "standard";
   config["geox-url"] = {
-    "geoip": "https://testingcf.jsdelivr.net/gh/gdfsnhsw/meta-rules-dat@release/geoip.dat",
-    "geosite": "https://testingcf.jsdelivr.net/gh/gdfsnhsw/meta-rules-dat@release/geosite.dat",
-    "mmdb": "https://testingcf.jsdelivr.net/gh/gdfsnhsw/meta-rules-dat@release/country.mmdb"
+    "geoip": "https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geoip-lite.dat",
+    "geosite": "https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geosite.dat",
+    "mmdb": "https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/country-lite.mmdb",
+    "asn": "https://mirror.ghproxy.com/https://github.com/xishang0128/geoip/releases/download/latest/GeoLite2-ASN.mmdb"
   };
 
-
-
-  // 添加 hosts 配置
-  config["hosts"] = {
-    "time.android.com": "203.107.6.88",
-    "time.facebook.com": "203.107.6.88",
-    "localhost": "127.0.0.1"
-  };
 
   // 覆盖策略组
   config["proxy-groups"] = [
