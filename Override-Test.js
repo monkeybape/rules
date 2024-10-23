@@ -56,9 +56,7 @@ function main(config) {
     "nameserver": ["https://doh.pub/dns-query", "https://dns.alidns.com/dns-query"],
     "nameserver-policy": {
       "geosite:cn": ["223.5.5.5", "tls://1.12.12.12:853", "tls://223.5.5.5:853"],
-      "geosite:gfw,geolocation-!cn": ["quic://223.5.5.5", "quic://223.6.6.6", "https://1.12.12.12/dns-query", "https://120.53.53.53/dns-query"],
-      "sol.local": ["192.168.31.249"],
-      "dog.local": ["192.168.31.249"]      
+      "geosite:gfw,geolocation-!cn": ["quic://223.5.5.5", "quic://223.6.6.6", "https://1.12.12.12/dns-query", "https://120.53.53.53/dns-query"]   
     }
   };
 
