@@ -35,7 +35,7 @@ function main(config) {
     "enhanced-mode": "fake-ip",
     "fake-ip-range": "198.18.0.1/16",
     "fake-ip-filter": [
-      "+.lan", "+.local", "time.windows.com", "time.nist.gov", "time.apple.com", "time.asia.apple.com",
+      "*.lan", "*.local", "time.windows.com", "time.nist.gov", "time.apple.com", "time.asia.apple.com",
       "*.ntp.org.cn", "*.openwrt.pool.ntp.org", "time1.cloud.tencent.com", "time.ustc.edu.cn",
       "pool.ntp.org", "ntp.ubuntu.com", "ntp.aliyun.com", "ntp1.aliyun.com", "ntp2.aliyun.com",
       "ntp3.aliyun.com", "ntp4.aliyun.com", "ntp5.aliyun.com", "ntp6.aliyun.com", "ntp7.aliyun.com",
