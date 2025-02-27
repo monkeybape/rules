@@ -196,6 +196,8 @@ DOMAIN-SUFFIX,zksync.io
 DOMAIN-SUFFIX,cbswap.io
 DOMAIN-SUFFIX,basescan.org
 DOMAIN-SUFFIX,polygonscan.com
+DOMAIN-SUFFIX,orbiter.finance
+DOMAIN-SUFFIX,testnetbridge.com
 DOMAIN-KEYWORD,binance
 DOMAIN-KEYWORD,huobi
 DOMAIN-KEYWORD,metamask
@@ -207,4 +209,3 @@ DOMAIN-KEYWORD,zerion
 DOMAIN-KEYWORD,mexc
 DOMAIN-KEYWORD,gmgn
 DOMAIN-KEYWORD,p2pify
-DOMAIN-SUFFIX,orbiter.finance
