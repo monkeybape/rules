@@ -199,6 +199,8 @@ DOMAIN-SUFFIX,bnbchain.org
 DOMAIN-SUFFIX,polygonscan.com
 DOMAIN-SUFFIX,orbiter.finance
 DOMAIN-SUFFIX,testnetbridge.com
+DOMAIN-SUFFIX,pancakeswap.finance
+DOMAIN-SUFFIX,pancakeswap.com
 DOMAIN-KEYWORD,binance
 DOMAIN-KEYWORD,huobi
 DOMAIN-KEYWORD,metamask
@@ -210,4 +212,4 @@ DOMAIN-KEYWORD,zerion
 DOMAIN-KEYWORD,mexc
 DOMAIN-KEYWORD,gmgn
 DOMAIN-KEYWORD,p2pify
-DOMAIN-KEYWORD,pancakeswap
+
