@@ -727,6 +727,7 @@ function main(config) {
     "RULE-SET,China_ipcidr,➿ 全球直连",
     "DOMAIN-KEYWORD,tracker,➿ 全球直连",
     "DST-PORT,20902,➿ 全球直连",
+    "IP-CIDR,38.101.215.15/32,♻️ 自动选择",
     "MATCH,🐟 漏网之鱼"
   ];
 
