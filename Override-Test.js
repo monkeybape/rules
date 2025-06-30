@@ -726,6 +726,9 @@ function main(config) {
     "RULE-SET,China_Domain,➿ 全球直连",
     "RULE-SET,China_ipcidr,➿ 全球直连",
     "DOMAIN-KEYWORD,tracker,➿ 全球直连",
+    "DOMAIN-SUFFIX,google-analytics.com,PROXY,♻️ 自动选择",
+    "DOMAIN-SUFFIX,orchestrator.nexus.xyz,♻️ 自动选择",
+    "DOMAIN-SUFFIX,orchestrator.nexus.xyz,♻️ 自动选择",
     //"DST-PORT,30011-30013,♻️ 自动选择,no-resolve",
     //"IP-CIDR,38.207.160.210/32,➿ 全球直连,no-resolve",
     "MATCH,🐟 漏网之鱼"
