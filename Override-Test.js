@@ -684,7 +684,7 @@ function main(config) {
 //    "AND,(AND,(DST-PORT,443),(NETWORK,UDP)),(GEOSITE,Geolocation-!cn),REJECT",
     "RULE-SET,Private_domain,➿ 全球直连",
     "RULE-SET,Private_ipcidr,➿ 全球直连,no-resolve",
-    "DOMAIN-SUFFIX,i.95551330151.xyz,➿ 全球直连",
+    "DOMAIN-SUFFIX,i.95551330151.xyz,🏁 出国流量",
     "DOMAIN-SUFFIX,gensyn-testnet.g.alchemy.com,🏁 出国流量",
     "IP-CIDR,91.199.209.55/32,➿ 全球直连",
     "IP-CIDR,103.150.8.50/32,➿ 全球直连",
