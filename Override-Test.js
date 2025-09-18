@@ -728,7 +728,7 @@ function main(config) {
     "DOMAIN-KEYWORD,tracker,➿ 全球直连",
     "DOMAIN-SUFFIX,google-analytics.com,♻️ 自动选择",
     "DOMAIN-SUFFIX,orchestrator.nexus.xyz,♻️ 自动选择",
-    "DOMAIN-SUFFIX,orchestrator.nexus.xyz,♻️ 自动选择",
+    "DOMAIN-SUFFIX,vital-proxies.com,🚀 节点选择",    
     //"DST-PORT,30011-30013,♻️ 自动选择,no-resolve",
     //"IP-CIDR,38.207.160.210/32,➿ 全球直连,no-resolve",
     "MATCH,🐟 漏网之鱼"
