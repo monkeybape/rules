@@ -46,7 +46,6 @@ DOMAIN-SUFFIX,bsc.getblock.io
 DOMAIN-SUFFIX,bscscan.com
 DOMAIN-SUFFIX,btc.com
 DOMAIN-SUFFIX,btcbox.co.jp
-DOMAIN-SUFFIX,bybit.com
 DOMAIN-SUFFIX,bytetree.com
 DOMAIN-SUFFIX,cbeci.org
 DOMAIN-SUFFIX,cex.io
@@ -230,3 +229,5 @@ DOMAIN-SUFFIX,backpack.exchange
 DOMAIN-KEYWORD,backpack
 DOMAIN-SUFFIX,xnftdata.com
 DOMAIN-SUFFIX,hyperliquid.xyz
+DOMAIN-SUFFIX,bybit.com
+DOMAIN-KEYWORD,bybit
