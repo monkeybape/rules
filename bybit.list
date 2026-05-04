@@ -4,7 +4,7 @@
 #DOMAIN-SUFFIX,byabcde.com
 #DOMAIN-SUFFIX,bybdc6.com
 #DOMAIN-SUFFIX,byapps.net
-#DOMAIN-KEYWORD,bybit
+DOMAIN-KEYWORD,bybit
 DOMAIN,bybit-exchange.github.io
 DOMAIN,app-measurement.com
 DOMAIN-SUFFIX,ffbbbdc6d3c353211fe2ba39c9f744cd.com
