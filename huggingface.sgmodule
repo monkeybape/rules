@@ -1,0 +1,10 @@
+#!name = HuggingFace 镜像重定向
+#!desc = 将 huggingface.co 请求重定向至 hf-mirror.com,加速国内访问模型下载
+#!category = 网络加速
+#!author = Lucas
+
+[MITM]
+hostname = %APPEND% huggingface.co, *.huggingface.co
+
+[Header Rewrite]
+http-request ^https?://huggingface\.co header-replace Host hf-mirror.com
